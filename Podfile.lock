@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Async (0.2.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Kingfisher (3.2.1)
+  - LTMorphingLabel (0.3.0)
+  - MJRefresh (3.1.12)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Async
+  - FMDB
+  - Kingfisher
+  - LTMorphingLabel
+  - MJRefresh
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Async: d80205f1a1b4eea24de8ddc62cf5197ff3025330
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
+  LTMorphingLabel: 2777d8d9cb699125f48dfcd95d78bd3d77c87ade
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: f6417e7df56b69ac7b6fc393e2154f07ff0d73f3
+
+COCOAPODS: 1.2.0.beta.1

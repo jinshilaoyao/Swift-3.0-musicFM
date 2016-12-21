@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01452BD20BE2BE86A27C73B6 /* Pods_FMJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C59A60C37E9FC26C30E303C /* Pods_FMJP.framework */; };
+		EB1BC3A61E08CB97008D3FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3A51E08CB97008D3FBD /* AppDelegate.swift */; };
+		EB1BC3A81E08CB97008D3FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3A71E08CB97008D3FBD /* ViewController.swift */; };
+		EB1BC3AB1E08CB97008D3FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3A91E08CB97008D3FBD /* Main.storyboard */; };
+		EB1BC3AD1E08CB97008D3FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3AC1E08CB97008D3FBD /* Assets.xcassets */; };
+		EB1BC3B01E08CB97008D3FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3AE1E08CB97008D3FBD /* LaunchScreen.storyboard */; };
+		EB1BC3B51E08CB97008D3FBD /* FMJP WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB1BC3B41E08CB97008D3FBD /* FMJP WatchKit App.app */; };
+		EB1BC3BB1E08CB97008D3FBD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3B91E08CB97008D3FBD /* Interface.storyboard */; };
+		EB1BC3BD1E08CB97008D3FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3BC1E08CB97008D3FBD /* Assets.xcassets */; };
+		EB1BC3C41E08CB97008D3FBD /* FMJP WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB1BC3C31E08CB97008D3FBD /* FMJP WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB1BC3CB1E08CB97008D3FBD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3CA1E08CB97008D3FBD /* InterfaceController.swift */; };
+		EB1BC3CD1E08CB97008D3FBD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3CC1E08CB97008D3FBD /* ExtensionDelegate.swift */; };
+		EB1BC3CF1E08CB97008D3FBD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3CE1E08CB97008D3FBD /* NotificationController.swift */; };
+		EB1BC3D11E08CB97008D3FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3D01E08CB97008D3FBD /* Assets.xcassets */; };
+		EB1BC3E71E08D5C1008D3FBD /* BaseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3E61E08D5C1008D3FBD /* BaseDB.swift */; };
+		EB1BC4041E08FAAB008D3FBD /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC4031E08FAAB008D3FBD /* Util.swift */; };
+		EB1BC4071E09061F008D3FBD /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC4061E09061F008D3FBD /* Song.swift */; };
+		EB1BC4091E090768008D3FBD /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC4081E090768008D3FBD /* SongList.swift */; };
+		EB1BC40B1E091F64008D3FBD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC40A1E091F64008D3FBD /* Common.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1BC3B61E08CB97008D3FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1BC39A1E08CB97008D3FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1BC3B31E08CB97008D3FBD;
+			remoteInfo = "FMJP WatchKit App";
+		};
+		EB1BC3C51E08CB97008D3FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1BC39A1E08CB97008D3FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1BC3C21E08CB97008D3FBD;
+			remoteInfo = "FMJP WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB1BC3D81E08CB97008D3FBD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB1BC3C41E08CB97008D3FBD /* FMJP WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BC3DC1E08CB97008D3FBD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB1BC3B51E08CB97008D3FBD /* FMJP WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		135D65F0B78E5EA72C96A2D3 /* Pods-FMJP WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMJP WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMJP WatchKit Extension/Pods-FMJP WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		5C59A60C37E9FC26C30E303C /* Pods_FMJP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMJP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8DF5F5FA255EC800C51146 /* Pods-FMJP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMJP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMJP/Pods-FMJP.release.xcconfig"; sourceTree = "<group>"; };
+		BCF3BCE4C123746A5BDDE10C /* Pods-FMJP WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMJP WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMJP WatchKit Extension/Pods-FMJP WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		C6A3732912D3F8B41C031931 /* Pods-FMJP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMJP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMJP/Pods-FMJP.debug.xcconfig"; sourceTree = "<group>"; };
+		DD529C92837295A8346003EF /* Pods_FMJP_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMJP_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BC3A21E08CB97008D3FBD /* FMJP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMJP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BC3A51E08CB97008D3FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB1BC3A71E08CB97008D3FBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB1BC3AA1E08CB97008D3FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB1BC3AC1E08CB97008D3FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1BC3AF1E08CB97008D3FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB1BC3B11E08CB97008D3FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BC3B41E08CB97008D3FBD /* FMJP WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FMJP WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BC3BA1E08CB97008D3FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EB1BC3BC1E08CB97008D3FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1BC3BE1E08CB97008D3FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BC3C31E08CB97008D3FBD /* FMJP WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FMJP WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BC3C91E08CB97008D3FBD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EB1BC3CA1E08CB97008D3FBD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EB1BC3CC1E08CB97008D3FBD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EB1BC3CE1E08CB97008D3FBD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EB1BC3D01E08CB97008D3FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1BC3D21E08CB97008D3FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BC3E01E08CC41008D3FBD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/FMJP-bljayxbwkmdwlccxirltnxhfayej/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		EB1BC3E61E08D5C1008D3FBD /* BaseDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDB.swift; sourceTree = "<group>"; };
+		EB1BC3FF1E08DD96008D3FBD /* FMJP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMJP-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB1BC4031E08FAAB008D3FBD /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		EB1BC4061E09061F008D3FBD /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		EB1BC4081E090768008D3FBD /* SongList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		EB1BC40A1E091F64008D3FBD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93B77378019842F63AE3A311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BC39F1E08CB97008D3FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01452BD20BE2BE86A27C73B6 /* Pods_FMJP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BC3C01E08CB97008D3FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		786C4DEB48EFBC5D98357036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3E01E08CC41008D3FBD /* Alamofire.framework */,
+				5C59A60C37E9FC26C30E303C /* Pods_FMJP.framework */,
+				DD529C92837295A8346003EF /* Pods_FMJP_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB1BC3991E08CB97008D3FBD = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3A41E08CB97008D3FBD /* FMJP */,
+				EB1BC3B81E08CB97008D3FBD /* FMJP WatchKit App */,
+				EB1BC3C71E08CB97008D3FBD /* FMJP WatchKit Extension */,
+				EB1BC3A31E08CB97008D3FBD /* Products */,
+				F6ECDA2418C9EC9348FB0858 /* Pods */,
+				786C4DEB48EFBC5D98357036 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1BC3A31E08CB97008D3FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3A21E08CB97008D3FBD /* FMJP.app */,
+				EB1BC3B41E08CB97008D3FBD /* FMJP WatchKit App.app */,
+				EB1BC3C31E08CB97008D3FBD /* FMJP WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1BC3A41E08CB97008D3FBD /* FMJP */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC4051E090614008D3FBD /* Module */,
+				EB1BC4021E08F9CC008D3FBD /* Common */,
+				EB1BC3E51E08D59B008D3FBD /* DataBase */,
+				EB1BC3A51E08CB97008D3FBD /* AppDelegate.swift */,
+				EB1BC3A71E08CB97008D3FBD /* ViewController.swift */,
+				EB1BC3A91E08CB97008D3FBD /* Main.storyboard */,
+				EB1BC3AC1E08CB97008D3FBD /* Assets.xcassets */,
+				EB1BC3AE1E08CB97008D3FBD /* LaunchScreen.storyboard */,
+				EB1BC3B11E08CB97008D3FBD /* Info.plist */,
+				EB1BC3FF1E08DD96008D3FBD /* FMJP-Bridging-Header.h */,
+			);
+			path = FMJP;
+			sourceTree = "<group>";
+		};
+		EB1BC3B81E08CB97008D3FBD /* FMJP WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3B91E08CB97008D3FBD /* Interface.storyboard */,
+				EB1BC3BC1E08CB97008D3FBD /* Assets.xcassets */,
+				EB1BC3BE1E08CB97008D3FBD /* Info.plist */,
+			);
+			path = "FMJP WatchKit App";
+			sourceTree = "<group>";
+		};
+		EB1BC3C71E08CB97008D3FBD /* FMJP WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3CA1E08CB97008D3FBD /* InterfaceController.swift */,
+				EB1BC3CC1E08CB97008D3FBD /* ExtensionDelegate.swift */,
+				EB1BC3CE1E08CB97008D3FBD /* NotificationController.swift */,
+				EB1BC3D01E08CB97008D3FBD /* Assets.xcassets */,
+				EB1BC3D21E08CB97008D3FBD /* Info.plist */,
+				EB1BC3C81E08CB97008D3FBD /* Supporting Files */,
+			);
+			path = "FMJP WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EB1BC3C81E08CB97008D3FBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3C91E08CB97008D3FBD /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB1BC3E51E08D59B008D3FBD /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC3E61E08D5C1008D3FBD /* BaseDB.swift */,
+				EB1BC4081E090768008D3FBD /* SongList.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		EB1BC4021E08F9CC008D3FBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC40A1E091F64008D3FBD /* Common.swift */,
+				EB1BC4031E08FAAB008D3FBD /* Util.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EB1BC4051E090614008D3FBD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BC4061E09061F008D3FBD /* Song.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F6ECDA2418C9EC9348FB0858 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6A3732912D3F8B41C031931 /* Pods-FMJP.debug.xcconfig */,
+				9B8DF5F5FA255EC800C51146 /* Pods-FMJP.release.xcconfig */,
+				135D65F0B78E5EA72C96A2D3 /* Pods-FMJP WatchKit Extension.debug.xcconfig */,
+				BCF3BCE4C123746A5BDDE10C /* Pods-FMJP WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1BC3A11E08CB97008D3FBD /* FMJP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BC3DD1E08CB97008D3FBD /* Build configuration list for PBXNativeTarget "FMJP" */;
+			buildPhases = (
+				C0EAA1739C4DF7579FD1CBD1 /* [CP] Check Pods Manifest.lock */,
+				EB1BC39E1E08CB97008D3FBD /* Sources */,
+				EB1BC39F1E08CB97008D3FBD /* Frameworks */,
+				EB1BC3A01E08CB97008D3FBD /* Resources */,
+				EB1BC3DC1E08CB97008D3FBD /* Embed Watch Content */,
+				46F16F2E4A2417107B73EBDD /* [CP] Embed Pods Frameworks */,
+				339461A2C467B1870C545868 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1BC3B71E08CB97008D3FBD /* PBXTargetDependency */,
+			);
+			name = FMJP;
+			productName = FMJP;
+			productReference = EB1BC3A21E08CB97008D3FBD /* FMJP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1BC3B31E08CB97008D3FBD /* FMJP WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BC3D91E08CB97008D3FBD /* Build configuration list for PBXNativeTarget "FMJP WatchKit App" */;
+			buildPhases = (
+				EB1BC3B21E08CB97008D3FBD /* Resources */,
+				EB1BC3D81E08CB97008D3FBD /* Embed App Extensions */,
+				93B77378019842F63AE3A311 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1BC3C61E08CB97008D3FBD /* PBXTargetDependency */,
+			);
+			name = "FMJP WatchKit App";
+			productName = "FMJP WatchKit App";
+			productReference = EB1BC3B41E08CB97008D3FBD /* FMJP WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EB1BC3C21E08CB97008D3FBD /* FMJP WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BC3D51E08CB97008D3FBD /* Build configuration list for PBXNativeTarget "FMJP WatchKit Extension" */;
+			buildPhases = (
+				4FEA772AD38291F6A8094F99 /* [CP] Check Pods Manifest.lock */,
+				EB1BC3BF1E08CB97008D3FBD /* Sources */,
+				EB1BC3C01E08CB97008D3FBD /* Frameworks */,
+				EB1BC3C11E08CB97008D3FBD /* Resources */,
+				189E50DF5E2B59E896F864CF /* [CP] Embed Pods Frameworks */,
+				2CC5E28AAEF40BFF40DCBCCE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FMJP WatchKit Extension";
+			productName = "FMJP WatchKit Extension";
+			productReference = EB1BC3C31E08CB97008D3FBD /* FMJP WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1BC39A1E08CB97008D3FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = joker;
+				TargetAttributes = {
+					EB1BC3A11E08CB97008D3FBD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5JTUB897PB;
+						ProvisioningStyle = Automatic;
+					};
+					EB1BC3B31E08CB97008D3FBD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5JTUB897PB;
+						ProvisioningStyle = Automatic;
+					};
+					EB1BC3C21E08CB97008D3FBD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5JTUB897PB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EB1BC39D1E08CB97008D3FBD /* Build configuration list for PBXProject "FMJP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1BC3991E08CB97008D3FBD;
+			productRefGroup = EB1BC3A31E08CB97008D3FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1BC3A11E08CB97008D3FBD /* FMJP */,
+				EB1BC3B31E08CB97008D3FBD /* FMJP WatchKit App */,
+				EB1BC3C21E08CB97008D3FBD /* FMJP WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1BC3A01E08CB97008D3FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BC3B01E08CB97008D3FBD /* LaunchScreen.storyboard in Resources */,
+				EB1BC3AD1E08CB97008D3FBD /* Assets.xcassets in Resources */,
+				EB1BC3AB1E08CB97008D3FBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BC3B21E08CB97008D3FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BC3BD1E08CB97008D3FBD /* Assets.xcassets in Resources */,
+				EB1BC3BB1E08CB97008D3FBD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BC3C11E08CB97008D3FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BC3D11E08CB97008D3FBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		189E50DF5E2B59E896F864CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMJP WatchKit Extension/Pods-FMJP WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CC5E28AAEF40BFF40DCBCCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMJP WatchKit Extension/Pods-FMJP WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		339461A2C467B1870C545868 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMJP/Pods-FMJP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46F16F2E4A2417107B73EBDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMJP/Pods-FMJP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FEA772AD38291F6A8094F99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0EAA1739C4DF7579FD1CBD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1BC39E1E08CB97008D3FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BC4091E090768008D3FBD /* SongList.swift in Sources */,
+				EB1BC3E71E08D5C1008D3FBD /* BaseDB.swift in Sources */,
+				EB1BC3A81E08CB97008D3FBD /* ViewController.swift in Sources */,
+				EB1BC3A61E08CB97008D3FBD /* AppDelegate.swift in Sources */,
+				EB1BC4041E08FAAB008D3FBD /* Util.swift in Sources */,
+				EB1BC4071E09061F008D3FBD /* Song.swift in Sources */,
+				EB1BC40B1E091F64008D3FBD /* Common.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BC3BF1E08CB97008D3FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BC3CF1E08CB97008D3FBD /* NotificationController.swift in Sources */,
+				EB1BC3CD1E08CB97008D3FBD /* ExtensionDelegate.swift in Sources */,
+				EB1BC3CB1E08CB97008D3FBD /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1BC3B71E08CB97008D3FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1BC3B31E08CB97008D3FBD /* FMJP WatchKit App */;
+			targetProxy = EB1BC3B61E08CB97008D3FBD /* PBXContainerItemProxy */;
+		};
+		EB1BC3C61E08CB97008D3FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1BC3C21E08CB97008D3FBD /* FMJP WatchKit Extension */;
+			targetProxy = EB1BC3C51E08CB97008D3FBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1BC3A91E08CB97008D3FBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1BC3AA1E08CB97008D3FBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB1BC3AE1E08CB97008D3FBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1BC3AF1E08CB97008D3FBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB1BC3B91E08CB97008D3FBD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1BC3BA1E08CB97008D3FBD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1BC3D31E08CB97008D3FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB1BC3D41E08CB97008D3FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB1BC3D61E08CB97008D3FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135D65F0B78E5EA72C96A2D3 /* Pods-FMJP WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5JTUB897PB;
+				INFOPLIST_FILE = "FMJP WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.FMJP.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		EB1BC3D71E08CB97008D3FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF3BCE4C123746A5BDDE10C /* Pods-FMJP WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5JTUB897PB;
+				INFOPLIST_FILE = "FMJP WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.FMJP.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		EB1BC3DA1E08CB97008D3FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5JTUB897PB;
+				IBSC_MODULE = FMJP_WatchKit_Extension;
+				INFOPLIST_FILE = "FMJP WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.FMJP.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EB1BC3DB1E08CB97008D3FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5JTUB897PB;
+				IBSC_MODULE = FMJP_WatchKit_Extension;
+				INFOPLIST_FILE = "FMJP WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.FMJP.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		EB1BC3DE1E08CB97008D3FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A3732912D3F8B41C031931 /* Pods-FMJP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5JTUB897PB;
+				INFOPLIST_FILE = FMJP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.FMJP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FMJP/FMJP-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB1BC3DF1E08CB97008D3FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8DF5F5FA255EC800C51146 /* Pods-FMJP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5JTUB897PB;
+				INFOPLIST_FILE = FMJP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.FMJP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FMJP/FMJP-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1BC39D1E08CB97008D3FBD /* Build configuration list for PBXProject "FMJP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BC3D31E08CB97008D3FBD /* Debug */,
+				EB1BC3D41E08CB97008D3FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BC3D51E08CB97008D3FBD /* Build configuration list for PBXNativeTarget "FMJP WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BC3D61E08CB97008D3FBD /* Debug */,
+				EB1BC3D71E08CB97008D3FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BC3D91E08CB97008D3FBD /* Build configuration list for PBXNativeTarget "FMJP WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BC3DA1E08CB97008D3FBD /* Debug */,
+				EB1BC3DB1E08CB97008D3FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BC3DD1E08CB97008D3FBD /* Build configuration list for PBXNativeTarget "FMJP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BC3DE1E08CB97008D3FBD /* Debug */,
+				EB1BC3DF1E08CB97008D3FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB1BC39A1E08CB97008D3FBD /* Project object */;
+}
