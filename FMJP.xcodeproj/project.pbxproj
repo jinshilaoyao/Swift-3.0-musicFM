@@ -28,7 +28,8 @@
 		EB20DC5E1E0CC3E000EAF8BD /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC5D1E0CC3E000EAF8BD /* Const.swift */; };
 		EB20DC611E0CD06700EAF8BD /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC601E0CD06700EAF8BD /* RoundImageView.swift */; };
 		EB20DC631E0CD07900EAF8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC621E0CD07900EAF8BD /* ViewController.swift */; };
-		EB3516AF1E135B770019D6BB /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516AE1E135B770019D6BB /* ChannelTableViewController.swift */; };
+		EB3516B11E1390D50019D6BB /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516B01E1390D50019D6BB /* ChannelTableViewController.swift */; };
+		EB3516B31E1394830019D6BB /* MusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516B21E1394830019D6BB /* MusicListTableViewController.swift */; };
 		EBE006661E0D236100D3AFE0 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006651E0D236100D3AFE0 /* DataCenter.swift */; };
 		EBE006681E0EA79D00D3AFE0 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */; };
 		EBE0066A1E0EA82400D3AFE0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006691E0EA82400D3AFE0 /* Channel.swift */; };
@@ -112,7 +113,8 @@
 		EB20DC5D1E0CC3E000EAF8BD /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		EB20DC601E0CD06700EAF8BD /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		EB20DC621E0CD07900EAF8BD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB3516AE1E135B770019D6BB /* ChannelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
+		EB3516B01E1390D50019D6BB /* ChannelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
+		EB3516B21E1394830019D6BB /* MusicListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListTableViewController.swift; sourceTree = "<group>"; };
 		EBE006651E0D236100D3AFE0 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		EBE006691E0EA82400D3AFE0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
@@ -265,7 +267,8 @@
 			children = (
 				EB20DC601E0CD06700EAF8BD /* RoundImageView.swift */,
 				EB20DC621E0CD07900EAF8BD /* ViewController.swift */,
-				EB3516AE1E135B770019D6BB /* ChannelTableViewController.swift */,
+				EB3516B01E1390D50019D6BB /* ChannelTableViewController.swift */,
+				EB3516B21E1394830019D6BB /* MusicListTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -530,12 +533,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1BC4091E090768008D3FBD /* SongList.swift in Sources */,
-				EB3516AF1E135B770019D6BB /* ChannelTableViewController.swift in Sources */,
+				EB3516B11E1390D50019D6BB /* ChannelTableViewController.swift in Sources */,
 				EBE0066A1E0EA82400D3AFE0 /* Channel.swift in Sources */,
 				EB1BC3E71E08D5C1008D3FBD /* BaseDB.swift in Sources */,
 				EBE006661E0D236100D3AFE0 /* DataCenter.swift in Sources */,
 				EB1BC3A61E08CB97008D3FBD /* AppDelegate.swift in Sources */,
 				EB20DC631E0CD07900EAF8BD /* ViewController.swift in Sources */,
+				EB3516B31E1394830019D6BB /* MusicListTableViewController.swift in Sources */,
 				EB1BC4041E08FAAB008D3FBD /* Util.swift in Sources */,
 				EB20DC5E1E0CC3E000EAF8BD /* Const.swift in Sources */,
 				EB1BC4071E09061F008D3FBD /* Song.swift in Sources */,

@@ -321,56 +321,55 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func downloadSong(_ sender: UIButton) {
-        if let dbSong = self.dbSong {
-            if dbSong.is_dl == 1 {
-                if Common.deleteSong(dbSong.sid, format: dbSong.format) {
-                    var ret2 = DataCenter.shareDataCenter.dbSongList.updateDownloadStatus(dbSong.sid, status: 0)
-                    
-                    self.dbSong?.is_dl = 0
-                    downloadButton.setImage(UIImage(named: "Download"), for: .normal)
-                }
-            } else {
-                let musicPath = Common.musicLocalPath(dbSong.sid, format: dbSong.format)
-                if Common.fileIsExist(musicPath) {
-                    print("文件已经保存")
-                    return
-                } else {
-                    HttpRequest.downloadFile(songUrl: dbSong.song_url, musicPath: musicPath, filePath: { 
-                        
-                        if Common.fileIsExist(musicPath) {
-                            if DataCenter.shareDataCenter.dbSongList.updateDownloadStatus(dbSong.sid, status: 1) {
-                                Async.main{
-                                    dbSong.is_dl = 1
-                                    self.downloadButton.setImage(UIImage(named: "Downloaded"), for: .normal)
-                                }
-                            } else {
-                                print("DB upload fail")
-                            }
-                        } else {
-                            print("\(musicPath) 文件不存在")
-                        }
-                        
-                    })
-                }
-            }
-        }
+//        if let dbSong = self.dbSong {
+//            if dbSong.is_dl == 1 {
+//                if Common.deleteSong(dbSong.sid, format: dbSong.format) {
+//                    var ret2 = DataCenter.shareDataCenter.dbSongList.updateDownloadStatus(dbSong.sid, status: 0)
+//                    
+//                    self.dbSong?.is_dl = 0
+//                    downloadButton.setImage(UIImage(named: "Download"), for: .normal)
+//                }
+//            } else {
+//                let musicPath = Common.musicLocalPath(dbSong.sid, format: dbSong.format)
+//                if Common.fileIsExist(musicPath) {
+//                    print("文件已经保存")
+//                    return
+//                } else {
+//                    HttpRequest.downloadFile(songUrl: dbSong.song_url, musicPath: musicPath, filePath: { 
+//                        
+//                        if Common.fileIsExist(musicPath) {
+//                            if DataCenter.shareDataCenter.dbSongList.updateDownloadStatus(dbSong.sid, status: 1) {
+//                                Async.main{
+//                                    dbSong.is_dl = 1
+//                                    self.downloadButton.setImage(UIImage(named: "Downloaded"), for: .normal)
+//                                }
+//                            } else {
+//                                print("DB upload fail")
+//                            }
+//                        } else {
+//                            print("\(musicPath) 文件不存在")
+//                        }
+//                        
+//                    })
+//                }
+//            }
+//        }
     }
     @IBAction func likeSong(_ sender: UIButton) {
-        guard let dbsong = self.dbSong else {
-            return
-        }
-        if dbsong.is_like == 1 {
-            if DataCenter.shareDataCenter.dbSongList.updateLikeStatus(dbsong.sid, status: 0) {
-                self.dbSong?.is_like = 0
-                likeButton.setImage(UIImage(named: "Unlike"), for: .normal)
-            }
-        } else {
-            if DataCenter.shareDataCenter.dbSongList.updateLikeStatus(dbsong.sid, status: 1) {
-                self.dbSong?.is_like = 1
-                likeButton.setImage(UIImage(named: "Like"), for: .normal)
-            }
-        }
-        
+//        guard let dbsong = self.dbSong else {
+//            return
+//        }
+//        if dbsong.is_like == 1 {
+//            if DataCenter.shareDataCenter.dbSongList.updateLikeStatus(dbsong.sid, status: 0) {
+//                self.dbSong?.is_like = 0
+//                likeButton.setImage(UIImage(named: "Unlike"), for: .normal)
+//            }
+//        } else {
+//            if DataCenter.shareDataCenter.dbSongList.updateLikeStatus(dbsong.sid, status: 1) {
+//                self.dbSong?.is_like = 1
+//                likeButton.setImage(UIImage(named: "Like"), for: .normal)
+//            }
+//        }
     }
     
 }
