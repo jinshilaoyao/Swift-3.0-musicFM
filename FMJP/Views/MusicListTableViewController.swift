@@ -35,9 +35,14 @@ class MusicListTableViewController: UITableViewController {
         HttpRequest.getSongInfoList(chidArray: curChannelList) { (info) in
             
             if info == nil {return}
-            DataCenter.shareDataCenter.curChaS = info!
+            DataCenter.shareDataCenter.curShowAllSongInfo = info!
+            self.tableView.reloadData()
             
+            self.tableView.mj_header.endRefreshing()
+            self.tableView.mj_footer.endRefreshing()
         }
+        
+        
     }
     
     func refreshList() {
@@ -52,19 +57,21 @@ class MusicListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.curChannelList.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "musicCell", for: indexPath)
 
-        // Configure the cell...
+        let info = DataCenter.shareDataCenter.curShowAllSongInfo[indexPath.row]
+        cell.textLabel?.text = info.name
+        cell.detailTextLabel?.text = info.artistName
 
         return cell
     }
