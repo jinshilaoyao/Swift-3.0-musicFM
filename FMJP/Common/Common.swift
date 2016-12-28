@@ -114,12 +114,13 @@ class Common {
         let regex = try? NSRegularExpression(pattern: regex, options: [])
         
         let nsString = text as NSString
-//        let results = regex?.matchesInString(text,
-//            options: nil, range: NSMakeRange(0, nsString.length))
-//            as! [NSTextCheckingResult]
-//        return map(results) { nsString.substringWithRange($0.range)}
-        let results = regex?.matches(in: text, options: [], range: NSMakeRange(0, nsString.length))
-        return results.map(nsString.substring(with: $0.range))
+        guard let results = regex?.matches(in: text, options: [], range: NSMakeRange(0, nsString.length)) else {
+            return [""]
+        }
+
+        return results.map({ (result) -> String in
+            return nsString.substring(with: result.range)
+        })
     }
     
     //02:57 => 2*60+57=177
@@ -128,8 +129,8 @@ class Common {
         var strArr = time.components(separatedBy: ":")
         if strArr.count == 0 {return nil}
 
-        var minute = Int(strArr[0])
-        var second = Int(strArr[1])
+        let minute = Int(strArr[0])
+        let second = Int(strArr[1])
         
         if let min = minute, let sec = second{
             return min * 60 + sec
@@ -143,7 +144,7 @@ class Common {
     
     class func praseSongLrc(_ lrc:String)->[(lrc:String,time:Int)]{
         
-        var list = lrc.components(separatedBy: "\n")
+        let list = lrc.components(separatedBy: "\n")
         var ret:[(lrc:String,time:Int)] = []
         
         for row in list {
@@ -153,7 +154,7 @@ class Common {
             
             if timeArray.count == 0 {continue}
             //[02:57.26]
-            var lrcTime = timeArray[0]
+            let lrcTime = timeArray[0]
             
             var lrcTxt:String = ""
             if lrcArray.count >= 1 {
@@ -162,7 +163,7 @@ class Common {
             }
             
             //02:57
-            var time = subStr(lrcTime, start: 1, length: 5)
+            let time = subStr(lrcTime, start: 1, length: 5)
             
             //println("time=\(time),txt=\(lrcTxt)")
             
@@ -176,15 +177,15 @@ class Common {
     class func currentLrcByTime(_ curLength:Int, lrcArray:[(lrc:String,time:Int)])->(String,String){
         
         var i = 0
-        for (lrc:String,time:Int) in lrcArray {
-
+        for (lrc, time) in lrcArray {
             if time >= curLength {
-                if i == 0 { return (lrc, "") }
-                var prev = lrcArray[i-1]
-                return (prev.lrc,lrc)
+                if i == 0 {return (lrc, "")}
+                let prev = lrcArray[i-1]
+                return (prev.lrc, lrc)
             }
             i += 1
         }
+        
         
         return ("","")
     }

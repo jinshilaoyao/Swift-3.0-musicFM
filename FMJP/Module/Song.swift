@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Song:NSObject{
     var sid:String
@@ -41,6 +42,10 @@ class Song:NSObject{
         
         super.init()
     }
+    
+    override var description: String {
+        return "a"
+    }
 }
 
 struct SongInfo {
@@ -54,6 +59,32 @@ struct SongInfo {
     var songPicBig:String
     var songPicRadio:String
     var allRate:String
+    
+    init(list: JSON) {
+        id = list["songId"].stringValue
+        name = list["songName"].stringValue
+        artistId = list["artistId"].stringValue
+        artistName = list["artistName"].stringValue
+        albumId = list["albumId"].intValue
+        albumName = list["albumName"].stringValue
+        songPicSmall = list["songPicSmall"].stringValue
+        songPicBig = list["songPicBig"].stringValue
+        songPicRadio = list["songPicRadio"].stringValue
+        allRate = list["allRate"].stringValue
+    }
+    
+    init(dic: [String: Any]) {
+        id = dic["songId"] as! String
+        name = dic["songName"] as! String
+        artistId = dic["artistId"] as! String
+        artistName = dic["artistName"] as! String
+        albumId = dic["albumId"] as! Int
+        albumName = dic["albumName"] as! String
+        songPicSmall = dic["songPicSmall"] as! String
+        songPicBig = dic["songPicBig"] as! String
+        songPicRadio = dic["songPicRadio"] as! String
+        allRate = dic["allRate"] as! String
+    }
 }
 
 struct SongLink {
@@ -66,4 +97,17 @@ struct SongLink {
     var time:Int
     var size:Int
     var rate:Int
+    
+    init(list: JSON) {
+         id = list["songId"].stringValue
+         name = list["songName"].stringValue
+         lrcLink = list["lrcLink"].stringValue
+         linkCode = list["linkCode"].intValue
+         songLink = list["songLink"].stringValue
+         format = list["format"].stringValue
+         time = list["time"].intValue
+         size = list["size"].intValue
+         rate = list["rate"].intValue
+
+    }
 }

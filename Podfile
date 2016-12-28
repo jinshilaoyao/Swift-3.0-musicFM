@@ -5,7 +5,7 @@ use_frameworks!
 target 'FMJP' do
 pod 'Alamofire'
 pod "SwiftyJSON"
-pod 'Async'
+pod 'AsyncSwift'
 pod 'MJRefresh'
 pod 'LTMorphingLabel'
 pod 'Kingfisher'

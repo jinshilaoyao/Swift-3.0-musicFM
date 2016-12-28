@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01452BD20BE2BE86A27C73B6 /* Pods_FMJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C59A60C37E9FC26C30E303C /* Pods_FMJP.framework */; };
 		EB1BC3A61E08CB97008D3FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3A51E08CB97008D3FBD /* AppDelegate.swift */; };
-		EB1BC3A81E08CB97008D3FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC3A71E08CB97008D3FBD /* ViewController.swift */; };
 		EB1BC3AB1E08CB97008D3FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3A91E08CB97008D3FBD /* Main.storyboard */; };
 		EB1BC3AD1E08CB97008D3FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3AC1E08CB97008D3FBD /* Assets.xcassets */; };
 		EB1BC3B01E08CB97008D3FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BC3AE1E08CB97008D3FBD /* LaunchScreen.storyboard */; };
@@ -26,6 +25,15 @@
 		EB1BC4071E09061F008D3FBD /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC4061E09061F008D3FBD /* Song.swift */; };
 		EB1BC4091E090768008D3FBD /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC4081E090768008D3FBD /* SongList.swift */; };
 		EB1BC40B1E091F64008D3FBD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BC40A1E091F64008D3FBD /* Common.swift */; };
+		EB20DC5E1E0CC3E000EAF8BD /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC5D1E0CC3E000EAF8BD /* Const.swift */; };
+		EB20DC611E0CD06700EAF8BD /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC601E0CD06700EAF8BD /* RoundImageView.swift */; };
+		EB20DC631E0CD07900EAF8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC621E0CD07900EAF8BD /* ViewController.swift */; };
+		EB3516AF1E135B770019D6BB /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516AE1E135B770019D6BB /* ChannelTableViewController.swift */; };
+		EBE006661E0D236100D3AFE0 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006651E0D236100D3AFE0 /* DataCenter.swift */; };
+		EBE006681E0EA79D00D3AFE0 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */; };
+		EBE0066A1E0EA82400D3AFE0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006691E0EA82400D3AFE0 /* Channel.swift */; };
+		EBE0066C1E10FA5B00D3AFE0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE0066B1E10FA5B00D3AFE0 /* AVFoundation.framework */; };
+		EBE0066E1E10FA6600D3AFE0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE0066D1E10FA6600D3AFE0 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +87,6 @@
 		DD529C92837295A8346003EF /* Pods_FMJP_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMJP_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1BC3A21E08CB97008D3FBD /* FMJP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMJP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1BC3A51E08CB97008D3FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB1BC3A71E08CB97008D3FBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB1BC3AA1E08CB97008D3FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1BC3AC1E08CB97008D3FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1BC3AF1E08CB97008D3FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +109,15 @@
 		EB1BC4061E09061F008D3FBD /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		EB1BC4081E090768008D3FBD /* SongList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		EB1BC40A1E091F64008D3FBD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		EB20DC5D1E0CC3E000EAF8BD /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		EB20DC601E0CD06700EAF8BD /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		EB20DC621E0CD07900EAF8BD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB3516AE1E135B770019D6BB /* ChannelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
+		EBE006651E0D236100D3AFE0 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		EBE006691E0EA82400D3AFE0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		EBE0066B1E10FA5B00D3AFE0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EBE0066D1E10FA6600D3AFE0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE0066E1E10FA6600D3AFE0 /* MediaPlayer.framework in Frameworks */,
+				EBE0066C1E10FA5B00D3AFE0 /* AVFoundation.framework in Frameworks */,
 				01452BD20BE2BE86A27C73B6 /* Pods_FMJP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +151,8 @@
 		786C4DEB48EFBC5D98357036 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBE0066D1E10FA6600D3AFE0 /* MediaPlayer.framework */,
+				EBE0066B1E10FA5B00D3AFE0 /* AVFoundation.framework */,
 				EB1BC3E01E08CC41008D3FBD /* Alamofire.framework */,
 				5C59A60C37E9FC26C30E303C /* Pods_FMJP.framework */,
 				DD529C92837295A8346003EF /* Pods_FMJP_WatchKit_Extension.framework */,
@@ -165,11 +185,11 @@
 		EB1BC3A41E08CB97008D3FBD /* FMJP */ = {
 			isa = PBXGroup;
 			children = (
+				EB20DC5F1E0CC5B300EAF8BD /* Views */,
 				EB1BC4051E090614008D3FBD /* Module */,
 				EB1BC4021E08F9CC008D3FBD /* Common */,
 				EB1BC3E51E08D59B008D3FBD /* DataBase */,
 				EB1BC3A51E08CB97008D3FBD /* AppDelegate.swift */,
-				EB1BC3A71E08CB97008D3FBD /* ViewController.swift */,
 				EB1BC3A91E08CB97008D3FBD /* Main.storyboard */,
 				EB1BC3AC1E08CB97008D3FBD /* Assets.xcassets */,
 				EB1BC3AE1E08CB97008D3FBD /* LaunchScreen.storyboard */,
@@ -222,8 +242,10 @@
 		EB1BC4021E08F9CC008D3FBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EB20DC5D1E0CC3E000EAF8BD /* Const.swift */,
 				EB1BC40A1E091F64008D3FBD /* Common.swift */,
 				EB1BC4031E08FAAB008D3FBD /* Util.swift */,
+				EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -232,8 +254,20 @@
 			isa = PBXGroup;
 			children = (
 				EB1BC4061E09061F008D3FBD /* Song.swift */,
+				EBE006651E0D236100D3AFE0 /* DataCenter.swift */,
+				EBE006691E0EA82400D3AFE0 /* Channel.swift */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		EB20DC5F1E0CC5B300EAF8BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB20DC601E0CD06700EAF8BD /* RoundImageView.swift */,
+				EB20DC621E0CD07900EAF8BD /* ViewController.swift */,
+				EB3516AE1E135B770019D6BB /* ChannelTableViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F6ECDA2418C9EC9348FB0858 /* Pods */ = {
@@ -324,6 +358,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5JTUB897PB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					EB1BC3B31E08CB97008D3FBD = {
 						CreatedOnToolsVersion = 8.0;
@@ -491,12 +530,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1BC4091E090768008D3FBD /* SongList.swift in Sources */,
+				EB3516AF1E135B770019D6BB /* ChannelTableViewController.swift in Sources */,
+				EBE0066A1E0EA82400D3AFE0 /* Channel.swift in Sources */,
 				EB1BC3E71E08D5C1008D3FBD /* BaseDB.swift in Sources */,
-				EB1BC3A81E08CB97008D3FBD /* ViewController.swift in Sources */,
+				EBE006661E0D236100D3AFE0 /* DataCenter.swift in Sources */,
 				EB1BC3A61E08CB97008D3FBD /* AppDelegate.swift in Sources */,
+				EB20DC631E0CD07900EAF8BD /* ViewController.swift in Sources */,
 				EB1BC4041E08FAAB008D3FBD /* Util.swift in Sources */,
+				EB20DC5E1E0CC3E000EAF8BD /* Const.swift in Sources */,
 				EB1BC4071E09061F008D3FBD /* Song.swift in Sources */,
+				EBE006681E0EA79D00D3AFE0 /* HttpRequest.swift in Sources */,
 				EB1BC40B1E091F64008D3FBD /* Common.swift in Sources */,
+				EB20DC611E0CD06700EAF8BD /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

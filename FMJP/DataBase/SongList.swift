@@ -186,6 +186,15 @@ class SongList: BaseDB {
         }
         return false
     }
+    
+    func updateSongDownloadUrl(sid: String, newUrl: String) -> Bool {
+        if self.open() {
+            let sql = "UPDATE tbl_song_list set song_url=? WHERE sid=?"
+            let ret = self.db.executeUpdate(sql, withArgumentsIn: [newUrl,sid])
+            return true
+        }
+        return false
+    }
 }
 
 

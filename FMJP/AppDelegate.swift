@@ -22,14 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
-        var db = BaseDB()
+        let _ = BaseDB()
         
         let downloader = KingfisherManager.shared.downloader
         downloader.downloadTimeout = 5
         
         let cache = KingfisherManager.shared.cache
-        cache.maxDiskCacheSize = 1024 * 1024 * 1024
-        cache.maxCachePeriodInSecond = 60 * 60 * 24 * 10
+        cache.maxDiskCacheSize = UInt(1024 * 1024 * 1024)
+        cache.maxCachePeriodInSecond = TimeInterval(60 * 60 * 24 * 10)
         
         return true
     }
