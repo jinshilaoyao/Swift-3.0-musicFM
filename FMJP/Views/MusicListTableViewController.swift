@@ -42,15 +42,32 @@ class MusicListTableViewController: UITableViewController {
             self.tableView.mj_footer.endRefreshing()
         }
         
+        HttpRequest.getSongLinkList(chidArray: self.curChannelList) { (link) in
+            DataCenter.shareDataCenter.curShowAllSongLink = link!
+        }
         
     }
     
     func refreshList() {
+        DataCenter.shareDataCenter.curChaShowStartIndex += 20
+        DataCenter.shareDataCenter.curChaShowEndIndex += 20
         
+        if DataCenter.shareDataCenter.curChaShowEndIndex > DataCenter.shareDataCenter.currentChannelAllSongId.count {
+            DataCenter.shareDataCenter.curChaShowStartIndex = DataCenter.shareDataCenter.curChaShowEndIndex-20
+        }
+        
+        loadSongData()
     }
     
     func loadMore() {
+        DataCenter.shareDataCenter.curChaShowEndIndex += 20
         
+        if DataCenter.shareDataCenter.curChaShowEndIndex > DataCenter.shareDataCenter.currentChannelAllSongId.count{
+            DataCenter.shareDataCenter.curChaShowEndIndex = DataCenter.shareDataCenter.currentChannelAllSongId.count
+            DataCenter.shareDataCenter.curChaShowStartIndex = DataCenter.shareDataCenter.curChaShowEndIndex-20
+        }
+        
+        loadSongData()
     }
 
     // MARK: - Table view data source
@@ -72,11 +89,31 @@ class MusicListTableViewController: UITableViewController {
         let info = DataCenter.shareDataCenter.curShowAllSongInfo[indexPath.row]
         cell.textLabel?.text = info.name
         cell.detailTextLabel?.text = info.artistName
-
+        
+        guard let imgUrl = URL(string: info.songPicSmall), let data = try? Data(contentsOf: imgUrl),let img = UIImage(data: data) else {
+            return cell
+        }
+        cell.imageView?.image = img
+        cell.imageView?.layer.cornerRadius = 22
+        cell.imageView?.layer.masksToBounds = true
+        
         return cell
     }
 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DataCenter.shareDataCenter.curPlaySongIndex = indexPath.row
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:CHANNEL_MUSIC_LIST_CLICK_NOTIFICATION), object: nil)
+        let _ = self.navigationController?.popToRootViewController(animated: true)
+    }
 
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1)
+        UIView.animate(withDuration: 0.25, animations: { () -> Void in
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+        })
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

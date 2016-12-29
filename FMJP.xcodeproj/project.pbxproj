@@ -30,6 +30,8 @@
 		EB20DC631E0CD07900EAF8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20DC621E0CD07900EAF8BD /* ViewController.swift */; };
 		EB3516B11E1390D50019D6BB /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516B01E1390D50019D6BB /* ChannelTableViewController.swift */; };
 		EB3516B31E1394830019D6BB /* MusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516B21E1394830019D6BB /* MusicListTableViewController.swift */; };
+		EB3516BD1E14A8990019D6BB /* DownloadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516BC1E14A8990019D6BB /* DownloadTableViewController.swift */; };
+		EB3516BF1E14B4DF0019D6BB /* LikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3516BE1E14B4DF0019D6BB /* LikeTableViewController.swift */; };
 		EBE006661E0D236100D3AFE0 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006651E0D236100D3AFE0 /* DataCenter.swift */; };
 		EBE006681E0EA79D00D3AFE0 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */; };
 		EBE0066A1E0EA82400D3AFE0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE006691E0EA82400D3AFE0 /* Channel.swift */; };
@@ -115,6 +117,8 @@
 		EB20DC621E0CD07900EAF8BD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB3516B01E1390D50019D6BB /* ChannelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
 		EB3516B21E1394830019D6BB /* MusicListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListTableViewController.swift; sourceTree = "<group>"; };
+		EB3516BC1E14A8990019D6BB /* DownloadTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadTableViewController.swift; sourceTree = "<group>"; };
+		EB3516BE1E14B4DF0019D6BB /* LikeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeTableViewController.swift; sourceTree = "<group>"; };
 		EBE006651E0D236100D3AFE0 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		EBE006671E0EA79D00D3AFE0 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		EBE006691E0EA82400D3AFE0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 				EB20DC621E0CD07900EAF8BD /* ViewController.swift */,
 				EB3516B01E1390D50019D6BB /* ChannelTableViewController.swift */,
 				EB3516B21E1394830019D6BB /* MusicListTableViewController.swift */,
+				EB3516BC1E14A8990019D6BB /* DownloadTableViewController.swift */,
+				EB3516BE1E14B4DF0019D6BB /* LikeTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -536,6 +542,8 @@
 				EB3516B11E1390D50019D6BB /* ChannelTableViewController.swift in Sources */,
 				EBE0066A1E0EA82400D3AFE0 /* Channel.swift in Sources */,
 				EB1BC3E71E08D5C1008D3FBD /* BaseDB.swift in Sources */,
+				EB3516BF1E14B4DF0019D6BB /* LikeTableViewController.swift in Sources */,
+				EB3516BD1E14A8990019D6BB /* DownloadTableViewController.swift in Sources */,
 				EBE006661E0D236100D3AFE0 /* DataCenter.swift in Sources */,
 				EB1BC3A61E08CB97008D3FBD /* AppDelegate.swift in Sources */,
 				EB20DC631E0CD07900EAF8BD /* ViewController.swift in Sources */,
