@@ -1,16 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FMJP_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="6Bf-0s-vFd">
+                            <items>
+                                <label width="30" alignment="left" verticalAlignment="bottom" text="00:00" id="xbu-jH-PJa">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <imageView width="70" height="70" alignment="center" verticalAlignment="center" id="N4a-xW-cD0"/>
+                                <label width="30" alignment="right" verticalAlignment="bottom" text="00:00" id="oDI-WH-8iM">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Music Name" textAlignment="center" id="sss-ge-ud2">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <group width="1" height="42" alignment="left" id="7Mp-Xe-axr">
+                            <items>
+                                <button width="25" height="25" alignment="left" verticalAlignment="center" backgroundImage="btn_pre" id="u4i-K7-bsm"/>
+                                <button width="30" height="30" alignment="center" verticalAlignment="center" backgroundImage="btn_play" id="3bx-06-nK8"/>
+                                <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="btn_next" id="Ywy-WD-274"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Label" id="dL8-wh-RIo">
+                            <fontDescription key="font" type="system" pointSize="9"/>
+                        </label>
+                        <label width="1" alignment="right" verticalAlignment="bottom" text="Label" textAlignment="right" id="XMV-aM-uTc">
+                            <fontDescription key="font" type="system" pointSize="9"/>
+                        </label>
+                    </items>
+                    <menu key="menu" id="BXJ-We-zEM">
+                        <items>
+                            <menuItem title="song" image="music_list" id="nUh-ma-CkC"/>
+                            <menuItem title="channel" image="channel_list" id="v9F-ZJ-DkN"/>
+                            <menuItem title="cancel" id="XZ7-b9-gUx"/>
+                        </items>
+                    </menu>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="337" y="349.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +72,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="FMJP_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
