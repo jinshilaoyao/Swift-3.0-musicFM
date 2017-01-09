@@ -41,6 +41,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let FPSLab = FPSLabel(frame: CGRect(x: 40, y: 20, width: 80, height: 40))
+        UIApplication.shared.keyWindow!.addSubview(FPSLab)
+        
         self.nameLabel.morphingEffect = .fall
         
         let blurEffect = UIBlurEffect(style: .light)

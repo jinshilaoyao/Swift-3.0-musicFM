@@ -14,5 +14,4 @@ end
 
 target 'FMJP WatchKit Extension' do
 platform :watchos, '2.0'
-pod 'SwiftyJSON'
 end

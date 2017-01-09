@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let cache = KingfisherManager.shared.cache
         cache.maxDiskCacheSize = UInt(1024 * 1024 * 1024)
         cache.maxCachePeriodInSecond = TimeInterval(60 * 60 * 24 * 10)
-        
+                
         return true
     }
 
